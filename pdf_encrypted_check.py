@@ -11,3 +11,6 @@ def check():
 
       else:
           print(f'{i} ---- is not a pdf-file ----')
+
+          
+check()

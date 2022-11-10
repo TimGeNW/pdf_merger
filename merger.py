@@ -7,17 +7,25 @@ import sys
 # only .pdf-files getting appended to the PdfMerger-Object.
 # write files wchich are stored in the PdfMerger-Object to new files with the write()-Function.
 
-def merge():
+def extract():
     PDF = PyPDF2.PdfMerger()
-
-    for i in sys.argv[1::]:
+    lists = []
+    while True:
+        s = input('Drag and Drop File here (Press just Enter when you inserted desired files): ')
+        lists.append(s)
+        if s == True:
+            s = input('Drag and Drop File here (Press just Enter when you inserted desired files): ')
+            lists.append(s)
+        elif s == '':
+            break
+            
+    for i in lists:
         if i.endswith('.pdf'):
             PDF.append(i)
 
-        else:
-            print(f'{i} ---- is not a pdf-file ----')
 
-    PDF.write('test.pdf')
+            
+    PDF.write('new_merged.pdf')
     PDF.close()
 
-merge()
+extract()

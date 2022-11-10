@@ -1,0 +1,30 @@
+
+# create a list(introduction) with available options
+# for loop to iterate over list(introduction) to print string-elements
+# user-input -> integer-Value
+# if/elif statements execute functions based on user-input
+
+
+def intro():
+    introduction = ['PDF-TOOL by TIM\n\n', '1 --- Pdf-Dateien zusammenführen\n', '2 --- Pdf-Dateien enkrypten\n', '--\n', '--\n', 'Geben Sie die Nummer ein um eine der angeführeten Optionen zu wählen']
+
+    for i in introduction:
+        print(i)
+    
+    s = int(input('>>> '))
+    
+    if s == 1:
+        print('Function1')
+    elif s == 2:
+        print('Function2')
+    elif s == 3:
+        print('Function3')
+    elif s == 3:
+        print('Function4')
+    
+    
+        
+
+
+        
+intro()

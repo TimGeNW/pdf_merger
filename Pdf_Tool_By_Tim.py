@@ -26,9 +26,9 @@ def extract():
             PDF.append(i)
 
 
-            
-    PDF.write('new_merged.pdf')
-    PDF.close()
+    with open('new_merged.pdf') as f:    
+        PDF.write(f)
+    
 
 
 

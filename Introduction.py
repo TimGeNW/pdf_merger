@@ -21,6 +21,9 @@ def intro():
         print('Function3')
     elif s == 3:
         print('Function4')
+    else:
+        print('Ungültige Eingabe...')
+        intro()
     
     
         

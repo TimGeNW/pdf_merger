@@ -3,6 +3,7 @@ import os
 import sys
 from tqdm import tqdm
 import time
+import getpass
 
 # initialize PdfMerger-Object. Create aan empty list called lists
 # while loop to insert as many pdf as wanted

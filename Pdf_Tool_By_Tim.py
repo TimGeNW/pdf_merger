@@ -63,19 +63,6 @@ def extract():
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 def intro():
     introduction = ['PDF-TOOL by TIM\n\n', '1 --- Pdf-Dateien zusammenführen\n', '2 --- Pdf-Dateien enkrypten\n', '--\n', '--\n', 'Geben Sie die Nummer ein um eine der angeführeten Optionen zu wählen']
 
